@@ -1,0 +1,73 @@
+const C3 = self.C3;
+self.C3_GetObjectRefTable = function () {
+	return [
+		C3.Plugins.Mouse,
+		C3.Plugins.Audio,
+		C3.Plugins.Browser,
+		C3.Plugins.Sprite,
+		C3.Plugins.Text,
+		C3.Behaviors.Fade,
+		C3.Plugins.TiledBg,
+		C3.Plugins.Button,
+		C3.Plugins.System.Cnds.OnLayoutStart,
+		C3.Plugins.Audio.Acts.Play,
+		C3.Plugins.Mouse.Cnds.OnObjectClicked,
+		C3.Plugins.System.Acts.GoToLayout,
+		C3.Plugins.Audio.Acts.Stop,
+		C3.Plugins.Browser.Acts.Close,
+		C3.Plugins.System.Acts.SetVar,
+		C3.Plugins.System.Cnds.Every,
+		C3.Plugins.System.Acts.CreateObject,
+		C3.Plugins.System.Exps.random,
+		C3.Plugins.Sprite.Acts.Destroy,
+		C3.Plugins.System.Acts.AddVar,
+		C3.Plugins.System.Cnds.EveryTick,
+		C3.Plugins.Text.Acts.SetText,
+		C3.Plugins.System.Cnds.CompareVar
+	];
+};
+self.C3_JsPropNameTable = [
+	{Mouse: 0},
+	{Audio: 0},
+	{Browser: 0},
+	{Sprite: 0},
+	{Sprite2: 0},
+	{Text2: 0},
+	{Fade: 0},
+	{Sprite3: 0},
+	{skor: 0},
+	{TiledBackground4: 0},
+	{Text3: 0},
+	{Sprite7: 0},
+	{saveTombol: 0},
+	{Text4: 0},
+	{Sprite10: 0},
+	{Text5: 0},
+	{Text6: 0},
+	{Text: 0},
+	{Sprite4: 0},
+	{Sprite5: 0},
+	{SKOR: 0}
+];
+
+self.InstanceType = {
+	Mouse: class extends self.IInstance {},
+	Audio: class extends self.IInstance {},
+	Browser: class extends self.IInstance {},
+	Sprite: class extends self.ISpriteInstance {},
+	Sprite2: class extends self.ISpriteInstance {},
+	Text2: class extends self.ITextInstance {},
+	Sprite3: class extends self.ISpriteInstance {},
+	skor: class extends self.ITextInstance {},
+	TiledBackground4: class extends self.ITiledBackgroundInstance {},
+	Text3: class extends self.ITextInstance {},
+	Sprite7: class extends self.ISpriteInstance {},
+	saveTombol: class extends self.IButtonInstance {},
+	Text4: class extends self.ITextInstance {},
+	Sprite10: class extends self.ISpriteInstance {},
+	Text5: class extends self.ITextInstance {},
+	Text6: class extends self.ITextInstance {},
+	Text: class extends self.ITextInstance {},
+	Sprite4: class extends self.ISpriteInstance {},
+	Sprite5: class extends self.ISpriteInstance {}
+}
